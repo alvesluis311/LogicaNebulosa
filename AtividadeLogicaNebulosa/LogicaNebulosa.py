@@ -1,7 +1,6 @@
 import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
-import matplotlib.pyplot as plt
 
 class LogicaNebulosa:
     def __init__(self):
@@ -19,19 +18,19 @@ class LogicaNebulosa:
         self.historico['bom'] = fuzz.trimf(self.historico.universe, [4, 6, 8])
         self.historico['excelente'] = fuzz.trimf(self.historico.universe, [6, 8, 10])
                 
-        self.renda['baixa'] = fuzz.trimf(self.renda.universe, [0, 0, 25000])
-        self.renda['media'] = fuzz.trimf(self.renda.universe, [20000, 50000, 80000])
-        self.renda['alta'] = fuzz.trimf(self.renda.universe, [65000, 100000, 100000])
+        self.renda['baixa'] = fuzz.trimf(self.renda.universe, [0, 0, 20000])
+        self.renda['media'] = fuzz.trimf(self.renda.universe, [0, 50000, 100000])
+        self.renda['alta'] = fuzz.trimf(self.renda.universe, [20000, 100000, 100000])
         
         # Funções de pertinência para a dívida atual
-        self.divida['baixa'] = fuzz.trimf(self.divida.universe, [0, 0, 33000])
-        self.divida['moderada'] = fuzz.trimf(self.divida.universe, [25000, 50000, 75000])
-        self.divida['alta'] = fuzz.trimf(self.divida.universe, [67000, 100000, 100000])
+        self.divida['baixa'] = fuzz.trimf(self.divida.universe, [0, 0, 20000])
+        self.divida['moderada'] = fuzz.trimf(self.divida.universe, [0, 50000, 100000])
+        self.divida['alta'] = fuzz.trimf(self.divida.universe, [20000, 100000, 100000])
         
         # Funções de pertinência para o risco
-        self.risco['baixo'] = fuzz.trimf(self.risco.universe, [0, 0, 33])
-        self.risco['medio'] = fuzz.trimf(self.risco.universe, [25, 50, 75])
-        self.risco['alto'] = fuzz.trimf(self.risco.universe, [67, 100, 100])
+        self.risco['baixo'] = fuzz.trimf(self.risco.universe, [0, 0, 25])
+        self.risco['medio'] = fuzz.trimf(self.risco.universe, [0, 50, 100])
+        self.risco['alto'] = fuzz.trimf(self.risco.universe, [25, 100, 100])
         
         self.regras = [
             # Regras com histórico "ruim"
