@@ -1,5 +1,4 @@
-# LogicaNebulosa
-# Sistema de Análise de Risco do Banco
+# LogicaNebulosa: Sistema de Análise de Risco do Banco
 
 ## Descrição
 
