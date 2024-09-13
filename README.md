@@ -13,7 +13,7 @@ O objetivo deste sistema é fazer uma avaliação de risco do crédito para clie
 
 1. Clone o repositório:
 
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/alvesluis311/LogicaNebulosa
 
 2. Abra o diretório do projeto
   
