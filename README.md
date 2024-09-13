@@ -64,12 +64,12 @@ O sistema retorna dois valores:
 Exemplo 1:
 
 Entrada:
-- Histórico de crédito: 8
+- Histórico de crédito: 10
 - Renda mensal: 60000
 - Dívida atual: 20000
 
 Saída:
-- Porcentagem do Risco: 8%
+- Porcentagem do Risco: 11%
 - Tipo de Risco: Baixo
 
 Exemplo 2:
@@ -80,5 +80,5 @@ Entrada:
 - Dívida atual: 50000
 
 Saída:
-- Porcentagem do Risco: 53%
+- Porcentagem do Risco: 50%
 - Tipo de Risco: Médio
